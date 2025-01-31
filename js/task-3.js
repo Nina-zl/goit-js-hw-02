@@ -4,9 +4,7 @@ const word2 = "sale";
 
 function checkForSpam(message) {
     const normalizemessage = message.toLowerCase();
-    // return (normalizemessage.includes(word1));
-    // return (normalizemessage.includes(word2));
-       return (normalizemessage.includes(word1)) || (normalizemessage.includes(word2));
+         return (normalizemessage.includes(word1)) || (normalizemessage.includes(word2));
 }
 
 
@@ -17,5 +15,3 @@ console.log(checkForSpam("Amazing SalE, only tonight!")); // true
 console.log(checkForSpam("Trust me, this is not a spam message")); // true
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
 console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
-
-
